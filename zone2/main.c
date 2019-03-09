@@ -1,6 +1,4 @@
 /* Copyright(C) 2018 Hex Five Security, Inc. - All rights reserved */
-#include <stdio.h>
-
 #include <libhexfive.h>
 
 int test(void)
@@ -15,7 +13,7 @@ int test(void)
 int main(int argc, char *argv[]){
     test();
 
-    printf("pico stack initialized\n");
+    asm volatile ("li a0, 0x1; lw a0, (a0)");
 
     while (1)
     {
