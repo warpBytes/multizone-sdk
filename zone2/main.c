@@ -3,7 +3,7 @@
 
 int test(void)
 {
-    int i;
+    volatile int i;
 
     for (i = 0; i < 1e6; i++) {
 

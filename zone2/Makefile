@@ -16,4 +16,3 @@ LDFLAGS += $(if $(findstring rv64, $(RISCV_ARCH)), -lhexfive64, -lhexfive32)
 
 include $(NEWLIB_DIR)/newlib.mk
 
-CFLAGS += -O0
